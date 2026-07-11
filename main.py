@@ -21,3 +21,6 @@ library.add_member(member2)
 library.show_books()
 
 library.show_members()
+
+title = input("Enter book title to remove a book: ")
+library.remove_book(title)
