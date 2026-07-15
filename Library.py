@@ -9,6 +9,15 @@ class Library:
     def add_book(self, book):
         self.books.append(book)
 
+    def exucute(self, remove_book):
+        res = input("What do you want to do? (remove_book, search_book)")
+        if res == "remove_book":
+            remove_book()
+        elif res == "search_book":
+            search = input("Enter a book title to search: ")
+            self.search_book(search)
+        
+
     def remove_book(self, title):
         for book in self.books:
             if book.title == title:
@@ -17,6 +26,18 @@ class Library:
                 self.show_books()
                 return
         print(f"Book '{title}' not found in library.")
+
+    def search_book(self, search):
+        found_books = []
+        results = [book for book in self.books if search.lower() in book.title.lower()]
+        if results:
+            print(f"\n Search results for '{search}': \n")
+            for book in results:
+                book.display()
+                print("--------------------")
+        else:
+            print(f"\n No Books found for '{search}' in Library")
+         
 
     def add_member(self, member):
         self.members.append(member)

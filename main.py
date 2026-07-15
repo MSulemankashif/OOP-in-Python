@@ -1,6 +1,7 @@
 from book import Book
 from members import Member
 from Library import Library
+ 
 
 library = Library()
 
@@ -22,5 +23,8 @@ library.show_books()
 
 library.show_members()
 
-title = input("Enter book title to remove a book: ")
-library.remove_book(title)
+# title = input("Enter book title to remove a book: ")
+# library.remove_book(title)
+
+search = input("Enter a book title to search: ")
+library.search_book(search)
