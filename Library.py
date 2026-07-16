@@ -9,14 +9,34 @@ class Library:
     def add_book(self, book):
         self.books.append(book)
 
-    def exucute(self, remove_book):
-        res = input("What do you want to do? (remove_book, search_book)")
+    def execute(self):
+        res = input("What do you want to do? (remove_book, search_book, update_book)")
         if res == "remove_book":
-            remove_book()
+            self.remove_book()
         elif res == "search_book":
             search = input("Enter a book title to search: ")
             self.search_book(search)
-        
+        elif res == "update_book":
+            self.update_title()
+
+    def update_title(self):
+        title = input("Enter the title of the book you want to update: ")
+        for book in self.books:
+            if book.title == title:
+                self.show_books()
+                update = input("What do you want to update? (title, author, price)")
+                if update == "title":
+                    new_title = input("Enter the new title: ")
+                    book.title = new_title
+                    print(f"Book title update to '{new_title}'")
+                elif update == "author":
+                    new_author = input("Enter the new author: ")
+                    book.author = new_author
+                    print(f"Book author update to '{new_author}'")
+                elif update == "price":
+                    new_price = input("Enter the new price: ")
+                    book.price = new_price
+                    print(f"Book price update to '{new_price}'")
 
     def remove_book(self, title):
         for book in self.books:

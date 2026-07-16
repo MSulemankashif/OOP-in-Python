@@ -20,6 +20,7 @@ library.add_member(member1)
 library.add_member(member2)
 
 library.show_books()
+library.execute()
 
 library.show_members()
 
