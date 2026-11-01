@@ -1,14 +1,11 @@
-# age = input("Enter your age: ")
+# String Operations
 
-# This is called type casting bcz we are changing it's type
-# new_age = int(age) + 1
+name = "Tony Stark"
 
-# print (1 + 1.25) # implicit
-# print (1 + int(2.9999)) #explicit
+# print(name.upper()) # Convert to uppercase
+# print(name.lower()) # Convert to Lowercase
+# Strings are Immutable, so we cannot change the original string directly. Instead, we can create a new string with the desired changes.
 
-a = int(input("Enter a number A: "))
-b = int(input("Enter a number B: "))
-
-sum = a+b
-
-print("Sum: " , sum)
+# print(name.find("ark"))
+print(name.replace("Tony Stark", "Iron Man"))
+print(name)
