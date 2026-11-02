@@ -1,11 +1,20 @@
-# String Operations
+# Building a Mini Calculator
 
-name = "Tony Stark"
+a = int(input("Enter a first value: "))
+b = int(input("Enter a second value: "))
+op = input("Enter an Operator (+, -, *, /, %, **): ")
 
-# print(name.upper()) # Convert to uppercase
-# print(name.lower()) # Convert to Lowercase
-# Strings are Immutable, so we cannot change the original string directly. Instead, we can create a new string with the desired changes.
-
-# print(name.find("ark"))
-print(name.replace("Tony Stark", "Iron Man"))
-print(name)
+if(op == "+"):
+    print(a + b)
+elif(op == "-"):
+    print(a - b)
+elif(op == "*"):
+    print(a * b)
+elif(op == "/"):
+    print(a / b)
+elif(op == "%"):
+    print(a % b)
+elif(op == "**"):
+    print(a ** b)
+else:
+    print("Invalid Operation")
