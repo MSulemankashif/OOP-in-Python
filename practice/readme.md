@@ -89,3 +89,49 @@ elif(percentage >= 50):
     print("Your Grade is C")
 else:
     print("Fail")
+
+# Building a Mini Calculator
+
+a = int(input("Enter a first value: "))
+b = int(input("Enter a second value: "))
+op = input("Enter an Operator (+, -, *, /, %, **): ")
+
+if(op == "+"):
+    print(a + b)
+elif(op == "-"):
+    print(a - b)
+elif(op == "*"):
+    print(a * b)
+elif(op == "/"):
+    print(a / b)
+elif(op == "%"):
+    print(a % b)
+elif(op == "**"):
+    print(a ** b)
+else:
+    print("Invalid Operation") 
+
+ <!-- WHile Loop -->
+ i = 5
+
+while i >= 0:
+    print(i * "hello")
+    i  -= 1
+
+print("end of code")
+
+# Odd Numbers
+for  i in range(2, 11, 2):
+    print(i)
+
+
+num = int(input("Enter a number for it's table: "))
+
+for i in range(1,11):
+    res = num * i
+    print(num , "x" , i , "=" , res)
+
+    if res == 21:
+        break
+    else:
+        continue

@@ -1,20 +1,4 @@
-# Building a Mini Calculator
+# Print all Odd Nums from 1 to 20
 
-a = int(input("Enter a first value: "))
-b = int(input("Enter a second value: "))
-op = input("Enter an Operator (+, -, *, /, %, **): ")
-
-if(op == "+"):
-    print(a + b)
-elif(op == "-"):
-    print(a - b)
-elif(op == "*"):
-    print(a * b)
-elif(op == "/"):
-    print(a / b)
-elif(op == "%"):
-    print(a % b)
-elif(op == "**"):
-    print(a ** b)
-else:
-    print("Invalid Operation")
+for i in range(0,21,2):
+    print(i)
