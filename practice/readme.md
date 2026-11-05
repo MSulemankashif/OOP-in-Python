@@ -135,3 +135,45 @@ for i in range(1,11):
         break
     else:
         continue
+
+# # Print all odd numbers from 0 to 10
+
+# for i in range(2, 11, 2):
+#     print(i)
+
+# Print all Even numbers from 0 to 10
+
+for i in range(1, 11, 2):
+    print(i)
+
+    # Print all odd numbers from 1 to 20
+
+for i in range(2, 21, 2):
+    print(i)
+
+    # Print the table of 57
+
+for i in range(1, 11):
+    print(57, "x", i, "=", 57*i)
+
+# Print all multiples of 3 from 1 to 50 but skip 15
+
+for i in range(1, 51):
+    if( i % 3 == 0):
+        print(i)
+
+    if(i == 15):
+        continue
+
+
+# Take two integers a and b as input
+# Find and print the first number between 1 and 1000 that is divisible by both numbers
+
+a = int(input("Enter first number:"))
+b = int(input("Enter second number:"))
+
+num = range(1, 1001)
+
+for i in num:
+    if(a % i == 0 and b % i == 0):
+        print(i)
