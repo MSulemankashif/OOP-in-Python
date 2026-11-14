@@ -1,14 +1,14 @@
-# Write a function to count vowels in a string
+# Write a function that returns a average marks if a list of marks is passed as a parameter
 
-def count_char(text):
-    count = 0
+def average_func(marks):
 
-    for char in text.lower():
-        if char in "aeiou":
-            count += 1
+    total = sum(marks)
 
-    print("Total vowels", count)
+    average = total / len(marks)
+    return  average
 
-text_in = input("Enter text here: ")
+student_marks = [80, 70, 90, 60]
 
-count_char(text_in)
+result = average_func(student_marks)
+
+print("Average Marks: ", int(result))

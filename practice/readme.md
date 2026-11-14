@@ -14,8 +14,6 @@ sum = a+b
 print("Sum: " , sum)
 
 
-
-
 # String Operations
 
 name = "Tony Stark"
@@ -468,3 +466,40 @@ def check_number(num):
 number = int(input("Enter a number to check weather it's Odd or Even: "))
 
 check_number(number)
+
+
+# Write a function to count vowels in a string
+
+def count_char(text):
+    count = 0
+
+    for char in text.lower():
+        if char in "aeiou":
+            count += 1
+
+    print("Total vowels", count)
+
+text_in = input("Enter text here: ")
+
+count_char(text_in)
+
+# Write a function to check weather a number is prime or not
+
+def check_prime(num):
+
+    if num <= 1:
+        print("Not Prime")
+        return
+
+    for i in range(2, num):
+
+        if num % i == 0:
+            print("Not Prime")
+            return
+
+    print("Prime Number")
+
+number = int(input("Enter a number here: "))
+
+check_prime(number)
+        
