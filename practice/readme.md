@@ -502,4 +502,87 @@ def check_prime(num):
 number = int(input("Enter a number here: "))
 
 check_prime(number)
-        
+
+
+# Write a function that returns a average marks if a list of marks is passed as a parameter
+
+def average_func(marks):
+
+    total = sum(marks)
+
+    average = total / len(marks)
+    return  average
+
+student_marks = [80, 70, 90, 60]
+
+result = average_func(student_marks)
+
+print("Average Marks: ", int(result))
+
+
+
+import random
+
+def play_game():
+
+    lucky_num = random.randint(1, 50)
+
+    while True:
+        user_input = int(input("Guess the Lucky Number: "))
+
+        if user_input == lucky_num:
+            print("You Won The Game!!!")
+            break
+
+        elif(user_input < lucky_num):
+            print("Less than Lucky Number. Try Again")
+        else:
+            print("Greater than Lucky Number. Try Again")
+
+play_game()
+
+
+# List Methods
+
+my_list = [1,3,4,5,2,7,6]
+
+my_list.append(9)
+# my_list.sort()
+my_list.sort(reverse=True)
+my_list.reverse()
+my_list.insert(-1, 8)
+
+print(my_list)
+
+
+# Tuple Methods
+
+tup = (1,3,2,4,5, 1)
+
+tup.index(5) #Returns index of First Occurence
+tup.count(1) #Returns total occurences of element
+print(tup) 
+
+# WAP to ask the user to enter names of their 3 favorite movies and store them in a list
+
+mov1 = input("Enter first movie name here: ")
+mov2 = input("Enter second movie name here: ")
+mov3 = input("Enter third movie name here: ")
+
+list = [mov1, mov2, mov3]
+
+print(list)
+print(type(list))
+
+
+# WAP to check if a list contains a palindrome of elements 
+
+myList = ["r", "a", "c", "e", "c" ,"a", "f"]
+
+myList_copy = myList.copy()
+myList_copy.reverse()
+
+if myList_copy == myList:
+    print("Palindrome")
+else:
+    print("Not Palindrome")

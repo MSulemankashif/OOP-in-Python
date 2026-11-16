@@ -1,14 +1,8 @@
-# Write a function that returns a average marks if a list of marks is passed as a parameter
+# Wap to count the number of students with the "A" grade in the following tuple
 
-def average_func(marks):
+tup = ["C", "D", "A", "A", "B", "B", "A"]
 
-    total = sum(marks)
+tup.sort()
+# print(tup.count("A"))
 
-    average = total / len(marks)
-    return  average
-
-student_marks = [80, 70, 90, 60]
-
-result = average_func(student_marks)
-
-print("Average Marks: ", int(result))
+print(tup)
